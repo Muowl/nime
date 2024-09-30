@@ -11,3 +11,13 @@
     color: #87CEEB;
    background-color: #995BD5;
 }
+
+.custom-btn-2{
+    background-color: #097969;
+    color: white;
+}
+
+.custom-btn-2:hover {
+    background-color: white;
+    color: #097969;
+}
