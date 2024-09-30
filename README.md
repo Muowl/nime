@@ -15,3 +15,5 @@
 - color: #9CD74C (texto verde)
 - color: #87CEEB (azul claro / talvez temporário)
 - color: #BF40BF (cor botão quase rosa)
+
+Mais referências em: referencia.css
