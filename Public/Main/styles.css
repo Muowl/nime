@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(135deg, #5d2495, #a864c7);
+    color: white;
+}
+
+.sidebar {
+    background-color: #3e1055;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar button {
+    background-color: #a864c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.recently-added {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.recently-added img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-section {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #4e1968;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    color: white;
+}
+
+.profile-section img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-section button {
+    background-color: #a864c7;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
