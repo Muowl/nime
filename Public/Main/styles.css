@@ -4,6 +4,7 @@ body {
 }
 
 .sidebar {
+    margin-left: 20px;
     background-color: #3e1055;
     padding: 20px;
     height: 100vh;
@@ -31,7 +32,7 @@ body {
 }
 
 .profile-section {
-    margin-left: 250px;
+    margin-left: 450px;
     padding: 20px;
     background-color: #4e1968;
     border-radius: 10px;
