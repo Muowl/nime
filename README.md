@@ -17,3 +17,6 @@
 - color: #BF40BF (cor botão quase rosa)
 
 Mais referências em: referencia.css
+
+## Para versão final
+- Ver dotenv para segurança em scripts.js
