@@ -4,15 +4,16 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .sidebar {
     background-color: #3e1055;
     padding: 20px;
     width: 200px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    border-radius: 10px;
+    margin-left: 0;
 }
 
 .sidebar button {
@@ -30,8 +31,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    margin-top: 440px;
     margin-left: 220px; /* Espaço para a sidebar */
-    margin-right: 320px; /* Espaço para a profile-section */
+    margin-right: 220px; /* Espaço para a profile-section */
     padding: 20px;
 }
 
@@ -42,17 +44,13 @@ body {
 }
 
 .recently-added img {
-    width: 100%;
+    width: auto;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .profile-section {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 300px;
+    width: 200px;
     padding: 20px;
     background-color: #4e1968;
     border-radius: 10px;
