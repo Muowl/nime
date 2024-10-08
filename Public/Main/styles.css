@@ -21,7 +21,6 @@ body {
     padding: 20px;
     width: 200px;
     border-radius: 10px;
-    margin-left: 0;
 }
 
 .sidebar button {
@@ -46,12 +45,13 @@ body {
     margin-left: 220px;
     margin-right: 220px;
     padding: 20px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .recently-added {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 20px;
 }
 
@@ -78,9 +78,16 @@ body {
 
 .profile-section button {
     background-color: #a864c7;
-    border: none;
-    padding: 10px 20px;
     color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profile-section button:hover{
+    background-color: white;
+    color: #a864c7;
 }
 
 .mb-4 {
