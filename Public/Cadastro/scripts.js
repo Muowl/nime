@@ -21,7 +21,10 @@ document.getElementById('registerButton').addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            window.location.href = '/login';
+            alert('Cadastro realizado com sucesso! Redirecionando para a página de login...');
+            setTimeout(() => {
+                window.location.href = '/login';
+            }, 4000); // Espera 4 segundos antes de redirecionar
         } else {
             alert('Erro ao cadastrar: ' + data.message);
         }
