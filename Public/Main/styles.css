@@ -1,14 +1,18 @@
 body {
-    background: linear-gradient(135deg, #5d2495, #a864c7);
-    color: white;
+    font-family: sans-serif;
+    background-color: #552583;
+    margin: 0;
+    display: flex;
+    height: 100vh;
 }
 
 .sidebar {
-    margin-left: 20px;
     background-color: #3e1055;
     padding: 20px;
-    height: 100vh;
+    width: 200px;
     position: fixed;
+    top: 0;
+    bottom: 0;
 }
 
 .sidebar button {
@@ -20,9 +24,21 @@ body {
     width: 100%;
 }
 
-.recently-added {
-    margin-left: 250px;
+.content {
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para coluna (vertical) */
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 220px; /* Espaço para a sidebar */
+    margin-right: 320px; /* Espaço para a profile-section */
     padding: 20px;
+}
+
+.recently-added {
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para coluna (vertical) */
+    gap: 20px;
 }
 
 .recently-added img {
@@ -32,12 +48,15 @@ body {
 }
 
 .profile-section {
-    margin-left: 450px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
     padding: 20px;
     background-color: #4e1968;
     border-radius: 10px;
     text-align: center;
-    max-width: 300px;
     color: white;
 }
 
@@ -51,5 +70,13 @@ body {
     background-color: #a864c7;
     border: none;
     padding: 10px 20px;
+    color: white;
+}
+
+.mb-4 {
+    background-color: #331155;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
     color: white;
 }
