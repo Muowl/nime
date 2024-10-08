@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    background-color: #552583;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #331155;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control {
+    color: #9CD74C;
+    background-color: #331155;
+}
+
+/* Textos dentro do box de formulario */
+.form-control::placeholder {
+    color: #9CD74C;
+}
+
+.form-control:focus {
+    color: #87CEEB;
+   background-color: #995BD5;
+}
+
+.form-control::selection {
+    background-color: #a777d6;
+    color: #9CD74C;
+}
+
+.form-control::-moz-selection {
+    background-color: #a777d6;
+    color: white; /* Para  Firefox */
+}
+
+input,
+button {
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Parte dos botões */
+.custom-btn {
+    color: #BF40BF;
+    border-color: #BF40BF;
+}
+
+.custom-btn:hover {
+    background-color: #BF40BF;
+    color: white;
+}
+
+.custom-btn-2{
+    background-color: #097969;
+    color: white;
+}
+
+.custom-btn-2:hover {
+    background-color: white;
+    color: #097969;
+}
+
+/* Degrade aplicado ao background */
+.gradient-bg {
+    background: linear-gradient(180deg, #995BD5, #502F6F);
+    color: white;
+}
+
+.form-container {
+    background-color: #331155;
+    padding: 20px;
+    border-radius: 10px;
+}

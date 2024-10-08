@@ -1,4 +1,4 @@
 const cadastroButton = document.querySelector('button:last-child');
 cadastroButton.addEventListener('click', () => {
-    alert('Você clicou em cadastrar!');
+    window.location.href = '/cadastro'; // Lembrar que o servidor precisa estar rodando para ser redirecionado
 });
