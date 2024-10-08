@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    background-color: #3e1055;
+    background-color: #331155;
     padding: 20px;
     width: 200px;
     border-radius: 10px;
@@ -25,34 +25,38 @@ body {
     width: 100%;
 }
 
+.sidebar button:hover{
+    background-color: white;
+    color: #a864c7;
+}
+
 .content {
     display: flex;
-    flex-direction: column; /* Altera a direção dos itens para coluna (vertical) */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
     flex-grow: 1;
-    margin-top: 440px;
-    margin-left: 220px; /* Espaço para a sidebar */
-    margin-right: 220px; /* Espaço para a profile-section */
+    margin-left: 220px;
+    margin-right: 220px;
     padding: 20px;
+    overflow: hidden;
 }
 
 .recently-added {
     display: flex;
-    flex-direction: column; /* Altera a direção dos itens para coluna (vertical) */
+    flex-direction: column;
     gap: 20px;
 }
 
 .recently-added img {
     width: auto;
-    height: auto;
+    height: 50%;
     border-radius: 20px;
 }
 
 .profile-section {
     width: 200px;
     padding: 20px;
-    background-color: #4e1968;
+    background-color: #331155;
     border-radius: 10px;
     text-align: center;
     color: white;
@@ -76,5 +80,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    color: white;
+}
+
+/* Degrade aplicado ao background */
+.gradient-bg {
+    background: linear-gradient(180deg, #995BD5, #502F6F);
     color: white;
 }
