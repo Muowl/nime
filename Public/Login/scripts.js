@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const user = JSON.parse(localStorage.getItem('user') || sessionStorage.getItem('user'));
+    if (user) {
+        window.location.href = '/';
+        return;
+    }
+});
+
 document.getElementById('loginButton').addEventListener('click', () => {
     const emailOrUsername = document.getElementById('loginEmailOrUsername').value;
     const password = document.getElementById('loginPassword').value;

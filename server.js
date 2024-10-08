@@ -25,6 +25,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'Public')));
+app.use('/Imagens', express.static(path.join(__dirname, 'Imagens')));
 
 const allowedTables = ['users', 'list', 'exemplar', 'list_exemplar'];
 
