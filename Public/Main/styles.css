@@ -70,12 +70,6 @@ body {
     color: white;
 }
 
-.profile-section img {
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 .profile-section button {
     background-color: #a864c7;
     color: white;
@@ -99,7 +93,6 @@ body {
     text-shadow: 0 0 2px #fff;
 }
 
-/* Degrade aplicado ao background */
 .gradient-bg {
     background: linear-gradient(180deg, #995BD5, #502F6F);
     color: white;

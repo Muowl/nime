@@ -44,3 +44,7 @@ document.querySelector('.profile-section .btn:last-child').addEventListener('cli
     sessionStorage.removeItem('user');
     window.location.href = '/login';
 });
+
+document.getElementById('listabtn').addEventListener('click', () => {
+    window.location.href = '/lista';
+});

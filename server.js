@@ -56,6 +56,9 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'Public/Login', 'login.html'));
 });
 
+app.get('/lista', (req, res) => {
+    res.sendFile(path.join(__dirname, 'Public/Lista', 'lista.html'));
+});
 
 app.post('/api/login', (req, res) => {
   const { emailOrUsername, password } = req.body;

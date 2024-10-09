@@ -1,102 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
     background-color: #3c007b;
     color: white;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.sidebar {
-    width: 300px;
-    background-color: #5601a4;
-    padding: 20px;
+    font-family: sans-serif;    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    height: auto;
 }
 
-.profile {
+.gradient-bg {
+    background: linear-gradient(180deg, #995BD5, #502F6F);
+    color: white;
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.table-dark th {
+    background-color: #6e07d5;
+}
+
+.table-dark td {
+    background-color: #4a0077;
+}
+
+.profile-section {
+    width: 200px;
+    padding: 20px;
+    background-color: #331155;
+    border-radius: 10px;
     text-align: center;
+    color: white;
 }
 
-.profile-pic {
-    border-radius: 50%;
+.profile-section img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
 }
 
-.profile-info h2 {
-    margin: 10px 0;
-}
-
-.profile-btn {
-    background-color: #6e07d5;
+.profile-section button {
+    background-color: #a864c7;
     color: white;
     border: none;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.profile-btn:hover {
-    background-color: #5b05b3;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.search-bar {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 300px;
-}
-
-.filter-btn {
-    background-color: #6e07d5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.filter-btn:hover {
-    background-color: #5b05b3;
-}
-
-.task-table {
     width: 100%;
-    border-collapse: collapse;
 }
 
-.task-table th, .task-table td {
-    padding: 15px;
-    border: 1px solid #6e07d5;
-    text-align: left;
-}
-
-.task-table th {
-    background-color: #6e07d5;
-}
-
-.task-table td {
-    background-color: #4a0077;
+.profile-section button:hover{
+    background-color: white;
+    color: #a864c7;
 }
