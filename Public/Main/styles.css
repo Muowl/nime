@@ -95,7 +95,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: #9CD74C;
+    text-shadow: 0 0 2px #fff;
 }
 
 /* Degrade aplicado ao background */
