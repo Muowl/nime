@@ -10,10 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.profile-section p').textContent = `@${user.username}`;
 });
 
-document.querySelector('.profile-section .btn:last-child').addEventListener('click', () => {
-    localStorage.removeItem('user');
-    sessionStorage.removeItem('user');
-    window.location.href = '/login';
+document.getElementById('btnvoltar').addEventListener('click', () => {
+    window.location.href = '/';
 });
 
 document.querySelector('.btn-primary').addEventListener('click', function() {
