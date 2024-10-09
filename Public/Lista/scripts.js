@@ -14,6 +14,6 @@ document.getElementById('btnvoltar').addEventListener('click', () => {
     window.location.href = '/';
 });
 
-document.querySelector('.btn-primary').addEventListener('click', function() {
+document.getElementById('btnfiltrar').addEventListener('click', function() {
     alert("Filtrar função não implementada.");
 });

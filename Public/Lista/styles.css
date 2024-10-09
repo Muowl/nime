@@ -11,7 +11,37 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(180deg, #995BD5, #502F6F);
+    background: linear-gradient(180deg, #683C8C, #4A0284);
+    color: white;
+}
+
+.custom-btn-2{
+    background-color: #995BD5;
+    color: white;
+    border-radius: 180;
+}
+
+.custom-btn-2:hover {
+    background-color: white;
+    color: #995BD5;
+}
+
+.form-control{
+    background-color: #995BD5;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    color: #87CEEB;
+   background-color: #9c61d6;
+}
+
+.form-control::selection {
+    background-color: #a777d6;
     color: white;
 }
 
