@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const app = express();
 const path = require('path');
+const fs = require('fs');
 const bodyParser = require('body-parser');
 const port = 3000;
 const sqlite3 = require('sqlite3').verbose();
@@ -152,6 +153,36 @@ app.put('/api/tables/:table/:id', (req, res) => {
       }
       res.json({ success: true });
   });
+});
+
+// Rota para atualizar informações do usuário
+app.put('/api/user/:id', (req, res) => {
+    const { id } = req.params;
+    const { nome, username, email, imagem_perfil } = req.body;
+
+    const sql = `UPDATE users SET nome = ?, username = ?, email = ?, imagem_perfil = ? WHERE id = ?`;
+    const params = [nome, username, email, imagem_perfil, id];
+
+    db.run(sql, params, function(err) {
+        if (err) {
+            return res.status(500).json({ success: false, message: 'Erro ao atualizar perfil', error: err.message });
+        }
+
+        // Atualizar a sessão do usuário
+        req.session.user = { ...req.session.user, nome, username, email, imagem_perfil };
+
+        res.json({ success: true, message: 'Perfil atualizado com sucesso' });
+    });
+});
+
+app.get('/Imagens', (req, res) => {
+    const imagesDir = path.join(__dirname, 'Imagens');
+    fs.readdir(imagesDir, (err, files) => {
+        if (err) {
+            return res.status(500).json({ error: 'Erro ao ler a pasta de imagens' });
+        }
+        res.json(files);
+    });
 });
 
 app.listen(port, () => {

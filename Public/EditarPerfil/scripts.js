@@ -78,5 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loadUserProfile();
 
         document.getElementById('saveProfileButton').addEventListener('click', updateUserProfile);
+        document.getElementById('backMain').addEventListener('click', () => {
+            window.location.href = '/';
+        });
     }
 });
