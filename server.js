@@ -38,6 +38,14 @@ app.get('/', (req, res) => {
   }
 });
 
+app.get('/perfil_cfg', (req, res) => {
+    const user = req.session.user;
+    if (!user) {
+        res.redirect('/login');
+    } else {
+        res.sendFile(path.join(__dirname, 'Public/EditarPerfil', 'editar_perfil.html'));
+    }
+  });
 
 app.get('/cadastro', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public/Cadastro', 'cadastro.html'));
@@ -46,6 +54,7 @@ app.get('/cadastro', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'Public/Login', 'login.html'));
 });
+
 
 app.post('/api/login', (req, res) => {
   const { emailOrUsername, password } = req.body;
@@ -144,7 +153,6 @@ app.put('/api/tables/:table/:id', (req, res) => {
       res.json({ success: true });
   });
 });
-
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta http://localhost:${port}`);

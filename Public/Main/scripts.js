@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Erro:', error));
 });
 
+document.getElementById('editProfileButton').addEventListener('click', () => {
+    window.location.href = '/perfil_cfg';
+});
+
 document.querySelector('.profile-section .btn:last-child').addEventListener('click', () => {
     localStorage.removeItem('user');
     sessionStorage.removeItem('user');
