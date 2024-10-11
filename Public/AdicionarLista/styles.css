@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(180deg, #6e008b, #7b0094, #9a00b2);
+    color: white;
+}
+  
+h1 {
+font-size: 36px;
+}
+
+.form-control, .form-select {
+background-color: rgba(255, 255, 255, 0.1);
+color: white;
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control::placeholder {
+color: rgba(255, 255, 255, 0.7);
+}
+
+label {
+color: #b3ff66; /* Verde claro */
+}
+
+.btn-primary {
+background-color: #9a00b2;
+border-color: #6e008b;
+}
+
+.btn-primary:hover {
+background-color: #7b0094;
+border-color: #9a00b2;
+}
+
+.bg-dark {
+background-color: #310049 !important;
+}
+
+.rounded-circle {
+width: 150px;
+height: 150px;
+}
+
+.profile-section {
+    width: 200px;
+    padding: 20px;
+    background-color: #331155;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+.profile-section button {
+    background-color: #a864c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profile-section button:hover{
+    background-color: white;
+    color: #a864c7;
+}

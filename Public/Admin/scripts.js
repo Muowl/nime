@@ -103,3 +103,7 @@ function deleteEntity(table, id) {
         .catch(error => console.error('Erro:', error));
     }
 }
+
+document.getElementById('addAnime').addEventListener('click', () => {
+    window.location.href = '/insere';
+});

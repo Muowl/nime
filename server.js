@@ -178,6 +178,18 @@ app.put('/api/user/:id', (req, res) => {
     });
 });
 
+app.post('/api/inserirExemplar', (req, res) => {
+    const exemplar = req.body;
+    db.run(`INSERT INTO exemplar (nome, sinopse, categoria, episodio_capitulo_total, imagem, nota_geral, data_lancamento) VALUES (?, ?, ?, ?, ?, ?, ?)`, 
+    [exemplar.nome, exemplar.sinopse, exemplar.categoria, exemplar.episodio_capitulo_total, exemplar.imagem, exemplar.nota_geral, exemplar.data_lancamento], 
+    function(err) {
+        if (err) {
+            return res.status(500).send(err.message);
+        }
+        res.send(`Um novo exemplar foi inserido com ID ${this.lastID}`);
+    });
+});
+
 app.get('/Imagens', (req, res) => {
     const imagesDir = path.join(__dirname, 'Imagens');
     fs.readdir(imagesDir, (err, files) => {
@@ -197,6 +209,9 @@ app.get('/perfil', (req, res) => {
     }
 });
 
+app.get('/insere', (req, res) => {
+    res.sendFile(path.join(__dirname, 'Public/APIJikan', 'get_jikan_api.html'));
+});
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta http://localhost:${port}`);
