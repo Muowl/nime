@@ -216,3 +216,12 @@ app.get('/insere', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando na porta http://localhost:${port}`);
 });
+
+app.get('/adicionar', (req, res) => {
+    const user = req.session.user;
+    if (!user) {
+        res.redirect('/login');
+    } else {
+        res.sendFile(path.join(__dirname, 'Public/AdicionarLista', 'adicionar_lista.html'));
+    }
+});
