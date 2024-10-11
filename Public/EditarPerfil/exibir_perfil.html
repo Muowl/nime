@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exibir Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="EditarPerfil/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil</h1>
+        <div class="form-container">
+            <div class="mb-3">
+                <label for="profileImage" class="form-label">Imagem de Perfil</label>
+                <img id="profileImage" src="" alt="Imagem de Perfil" class="img-thumbnail">
+            </div>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <p id="nome" class="form-control-plaintext"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <p id="username" class="form-control-plaintext"></p>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <p id="email" class="form-control-plaintext"></p>
+            </div>
+
+            <button id="backMain" class="btn btn-success">Voltar</button>
+            <button id="editProfileButton" class="btn btn-primary">Editar Perfil</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="EditarPerfil/exibir_perfil.js"></script>
+</body>
+</html>

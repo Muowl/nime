@@ -48,3 +48,7 @@ document.querySelector('.profile-section .btn:last-child').addEventListener('cli
 document.getElementById('listabtn').addEventListener('click', () => {
     window.location.href = '/lista';
 });
+
+document.getElementById('viewProfileButton').addEventListener('click', () => {
+    window.location.href = '/perfil';
+});

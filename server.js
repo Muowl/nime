@@ -188,6 +188,16 @@ app.get('/Imagens', (req, res) => {
     });
 });
 
+app.get('/perfil', (req, res) => {
+    const user = req.session.user;
+    if (!user) {
+        res.redirect('/login');
+    } else {
+        res.sendFile(path.join(__dirname, 'Public/EditarPerfil', 'exibir_perfil.html'));
+    }
+});
+
+
 app.listen(port, () => {
     console.log(`Servidor rodando na porta http://localhost:${port}`);
 });
