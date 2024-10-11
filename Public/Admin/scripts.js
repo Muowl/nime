@@ -104,6 +104,6 @@ function deleteEntity(table, id) {
     }
 }
 
-document.getElementById('addAnime').click(){
+document.getElementById('addAnime').addEventListener('click', () => {
     window.location.href = '/insere';
-}
+});
