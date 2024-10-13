@@ -18,7 +18,7 @@ color: rgba(255, 255, 255, 0.7);
 }
 
 label {
-color: #b3ff66; /* Verde claro */
+color: #b3ff66;
 }
 
 .btn-primary {
@@ -54,7 +54,7 @@ height: 150px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
-    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+    object-fit: cover;
 }
 
 .profile-section button {

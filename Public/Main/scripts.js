@@ -52,3 +52,7 @@ document.getElementById('listabtn').addEventListener('click', () => {
 document.getElementById('viewProfileButton').addEventListener('click', () => {
     window.location.href = '/perfil';
 });
+
+document.getElementById('adicionarbtn').addEventListener('click', () => {
+    window.location.href = '/adicionar';
+});

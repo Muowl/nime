@@ -13,3 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('btnvoltar').addEventListener('click', () => {
     window.location.href = '/';
 });
+
+document.getElementById('viewProfileButton').addEventListener('click', () => {
+    window.location.href = '/perfil';
+});
