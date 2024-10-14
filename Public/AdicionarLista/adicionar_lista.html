@@ -10,42 +10,49 @@
   <div class="container-fluid">
     <div class="row">
         <div class="col-md-9 p-4">
-            <h1 class="text-center text-success">Adicionar</h1>
             <form>
             <div class="mb-3">
-                <label for="anime-name" class="form-label">Nome do anime</label>
-                <input type="text" class="form-control" id="anime-name" placeholder="Nome do anime">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Nome">
             </div>
-
             <div class="mb-3">
-                <label for="category" class="form-label">Categorias</label>
-                <select class="form-select" id="category" multiple>
-                <option value="1">Ação</option>
-                <option value="2">Drama</option>
-                <option value="3">Comédia</option>
-                <option value="4">Aventura</option>
-                <option value="5">Fantasia</option>
+                <label for="type" class="form-label">Tipo</label>
+                <select class="form-select" id="type">
+                    <option value="" selected>Escolha um tipo</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Manga">Mangá</option>
+                    <option value="Manhwa">Manhwa</option>
+                    <option value="Manhua">Manhua</option>
                 </select>
             </div>
 
             <div class="mb-3">
-                <label for="episodes" class="form-label">Número de episódios assistidos / Número de episódios</label>
-                <input type="text" class="form-control" id="episodes" placeholder="11 / 20">
+                <label for="category" class="form-label">Categorias</label>
+                <select class="form-select" id="category">
+                    <option value="" selected>Escolha categorias</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Fantasia">Fantasia</option>
+                </select>
+            </div>
+
+            <ul class="list-group" id="selectedcategory"></ul>
+
+            <div class="mb-3">
+                <label for="episodes" class="form-label">Número de episódios ou capítulos assistidos ou lidos / Número de episódios ou capítulos</label>
+                <input type="text" class="form-control" id="episodes" placeholder="11/20">
             </div>
 
             <div class="mb-3">
-                <label for="anime-rating" class="form-label">Nota para o anime (EX: 8/10)</label>
-                <input type="text" class="form-control" id="anime-rating" placeholder="08 / 10 (Bom, mas não bombom)">
+                <label for="anime-rating" class="form-label">Nota</label>
+                <input type="text" class="form-control" id="anime-rating" placeholder="08/10 ">
             </div>
 
             <div class="mb-3">
                 <label for="additional-notes" class="form-label">Notas adicionais</label>
-                <textarea class="form-control" id="additional-notes" rows="3" placeholder="Notas sobre o episódio, exemplo: Pogger d+"></textarea>
-            </div>
-
-            <div class="mb-3">
-                <label for="image-link" class="form-label">Link para Imagem</label>
-                <input type="text" class="form-control" id="image-link" placeholder="imgur.com/exemplo">
+                <textarea class="form-control" id="additional-notes" rows="3" placeholder="Notas sobre o episódio/capítulo, exemplo: Pogger d+"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Salvar</button>

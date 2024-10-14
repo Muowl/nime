@@ -8,13 +8,16 @@ font-size: 36px;
 }
 
 .form-control, .form-select {
-background-color: rgba(255, 255, 255, 0.1);
-color: white;
-border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #b3ff66;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
 .form-control::placeholder {
-color: rgba(255, 255, 255, 0.7);
+    color: #310049;
+}
+.form-control:focus{
+    background-color: #a864c7;
 }
 
 label {
@@ -22,13 +25,14 @@ color: #b3ff66;
 }
 
 .btn-primary {
-background-color: #9a00b2;
-border-color: #6e008b;
+background-color: #310049;
+border-color: white;
 }
 
 .btn-primary:hover {
 background-color: #7b0094;
-border-color: #9a00b2;
+color: white;
+border-color: #a864c7;
 }
 
 .bg-dark {
@@ -69,4 +73,36 @@ height: 150px;
 .profile-section button:hover{
     background-color: white;
     color: #a864c7;
+}
+
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #331155;
+    color: #b3ff66;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form-select {
+    background-color: #7b0094;
+    color: #b3ff66; 
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.form-select option {
+    color: #b3ff66;
+    background-color: #7b0094;
 }
