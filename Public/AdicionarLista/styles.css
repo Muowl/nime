@@ -1,13 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background: linear-gradient(180deg, #6e008b, #7b0094, #9a00b2);
     color: white;
     font-family: sans-serif;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0;
-    height: auto;
+    flex-direction: row;
+    flex: 1;
+    flex-grow: 1;
 }
 
 .form-control, .form-select {

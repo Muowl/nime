@@ -1,19 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     font-family: sans-serif;
     background-color: #552583;
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Distribui o espaço entre os elementos filhos */
-    align-items: stretch;
-    margin: 0; /* Remove a margem padrão */
+    flex-direction: row;
+    flex-grow: 1;
 }
 
-.profile-section img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+.content {
+    flex-grow: 1;
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 20px;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #995BD5, #502F6F);
 }
 
 .sidebar {
@@ -21,44 +29,6 @@ body {
     padding: 20px;
     width: 200px;
     border-radius: 10px;
-}
-
-.sidebar button {
-    background-color: #a864c7;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.sidebar button:hover{
-    background-color: white;
-    color: #a864c7;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    flex-grow: 1;
-    margin-left: 220px;
-    margin-right: 220px;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.recently-added {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 20px;
-}
-
-.recently-added img {
-    width: auto;
-    height: auto;
-    border-radius: 20px;
 }
 
 .profile-section {
@@ -70,7 +40,15 @@ body {
     color: white;
 }
 
-.profile-section button {
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.sidebar button, .profile-section button {
     background-color: #a864c7;
     color: white;
     border: none;
@@ -79,9 +57,16 @@ body {
     width: 100%;
 }
 
-.profile-section button:hover{
+.sidebar button:hover, .profile-section button:hover {
     background-color: white;
     color: #a864c7;
+}
+
+.recently-added {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
 }
 
 .mb-4 {
