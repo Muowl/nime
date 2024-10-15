@@ -17,7 +17,7 @@ body {
 }
 
 .form-control::placeholder {
-    color: #310049;
+    color: #b3ff66;
 }
 .form-control:focus{
     background-color: #a864c7;
