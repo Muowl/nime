@@ -1,18 +1,21 @@
 body {
     background: linear-gradient(180deg, #6e008b, #7b0094, #9a00b2);
     color: white;
-}
-  
-h1 {
-font-size: 36px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    height: auto;
 }
 
 .form-control, .form-select {
     background-color: rgba(255, 255, 255, 0.1);
     color: #b3ff66;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    
+}
+
 .form-control::placeholder {
     color: #310049;
 }
@@ -51,6 +54,7 @@ height: 150px;
     border-radius: 10px;
     text-align: center;
     color: white;
+    justify-content: right;
 }
 
 .profile-section img {
