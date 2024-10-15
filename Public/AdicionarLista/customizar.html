@@ -1,0 +1,77 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="AdicionarLista/styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9 p-4">
+            <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Nome">
+            </div>
+            <div class="mb-3">
+                <label for="type" class="form-label">Tipo</label>
+                <select class="form-select" id="type">
+                    <option value="" selected>Escolha um tipo</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Manga">Mangá</option>
+                    <option value="Manhwa">Manhwa</option>
+                    <option value="Manhua">Manhua</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="category" class="form-label">Categorias</label>
+                <select class="form-select" id="category">
+                    <option value="" selected>Escolha categorias</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Fantasia">Fantasia</option>
+                </select>
+            </div>
+
+            <ul class="list-group" id="selectedcategory"></ul>
+
+            <div class="mb-3">
+                <label for="episodes" class="form-label">Número de episódios ou capítulos assistidos ou lidos / Número de episódios ou capítulos</label>
+                <input type="text" class="form-control" id="episodes" placeholder="11/20">
+            </div>
+
+            <div class="mb-3">
+                <label for="anime-rating" class="form-label">Nota</label>
+                <input type="text" class="form-control" id="anime-rating" placeholder="08/10 ">
+            </div>
+
+            <div class="mb-3">
+                <label for="additional-notes" class="form-label">Notas adicionais</label>
+                <textarea class="form-control" id="additional-notes" rows="3" placeholder="Notas sobre o episódio/capítulo, exemplo: Pogger d+"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </div>
+
+        <div class="col-md-3 d-flex justify-content-end">
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/100" alt="User Profile">
+                <h4>User</h4>
+                <p>@User</p>
+                <button class="btn" id="viewProfileButton">Ver perfil</button>
+                <button class="btn" id="btnvoltar">Voltar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="AdicionarLista/scripts.js"></script>
+</body>
+</html>

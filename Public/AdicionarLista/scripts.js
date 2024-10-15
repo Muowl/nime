@@ -14,6 +14,14 @@ document.getElementById('btnvoltar').addEventListener('click', () => {
     window.location.href = '/';
 });
 
+document.getElementById('btncustomizar').addEventListener('click', () => {
+    window.location.href = '/customizar';
+});
+
+document.getElementById('btnpesquisar').addEventListener('click', () => {
+    window.location.href = '/pesquisar';
+});
+
 document.getElementById('viewProfileButton').addEventListener('click', () => {
     window.location.href = '/perfil';
 });
