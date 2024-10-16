@@ -43,6 +43,13 @@ body {
 .btn-outline-secondary:hover{
     background-color: white;
     color: #995BD5;
+    border-color: #6e07d5;
+}
+
+.btn-outline-secondary:active{
+    color:white !important;
+    background-color: #995BD5 !important;
+    border-color: white !important;
 }
 
 .form-control{
