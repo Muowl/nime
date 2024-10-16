@@ -33,6 +33,18 @@ body {
     color: #995BD5;
 }
 
+.btn-outline-secondary{
+    background-color: #995BD5;
+    color: white;
+    border-radius: 180;
+    border-color: white;
+}
+
+.btn-outline-secondary:hover{
+    background-color: white;
+    color: #995BD5;
+}
+
 .form-control{
     background-color: #995BD5;
     color: white;
@@ -44,7 +56,7 @@ body {
 
 .form-control:focus {
     color: #87CEEB;
-   background-color: #9c61d6;
+    background-color: #9c61d6;
 }
 
 .form-control::selection {

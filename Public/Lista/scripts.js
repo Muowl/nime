@@ -21,3 +21,8 @@ document.getElementById('btnfiltrar').addEventListener('click', function() {
 document.getElementById('viewProfileButton').addEventListener('click', () => {
     window.location.href = '/perfil';
 });
+
+document.getElementById('btnSearch').addEventListener('click', function() {
+    let searchValue = document.querySelector('input[type="text"]').value;
+    alert("Você está procurando por: " + searchValue);
+});
