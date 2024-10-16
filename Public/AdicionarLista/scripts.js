@@ -28,27 +28,7 @@ document.getElementById('viewProfileButton').addEventListener('click', () => {
 
 const itemSelect = document.getElementById('category');
 const selectedItems = document.getElementById('selectedcategory');
-
-function addItem(item) {
-    const existingItems = Array.from(selectedItems.getElementsByTagName('li'));
-    if (existingItems.some(li => li.textContent === item)) {
-        alert('Esse item já foi selecionado.');
-        return;
-    }
-
-    const li = document.createElement('li');
-    li.classList.add('list-group-item');
-    li.textContent = item;
-
-    const removeBtn = document.createElement('button');
-    removeBtn.classList.add('btn', 'btn-danger', 'btn-sm', 'ms-2');
-    removeBtn.textContent = 'Remover';
-    removeBtn.onclick = () => li.remove(); 
-
-    li.appendChild(removeBtn);
-
-    selectedItems.appendChild(li);
-}
+function addItem(item) {/*...*/}
 
 itemSelect.addEventListener('change', function () {
     const selectedItem = this.value;
