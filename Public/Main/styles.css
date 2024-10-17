@@ -33,6 +33,8 @@ body {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    background-color: #a864c7;
+    min-width: 142px;
 }
 
 .profile-section {
