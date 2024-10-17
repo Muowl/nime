@@ -91,16 +91,6 @@ app.get('/insere', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public/APIJikan', 'get_jikan_api.html'));
 });
 
-
-app.get('/adicionar', (req, res) => {
-    const user = req.session.user;
-    if (!user) {
-        res.redirect('/login');
-    } else {
-        res.sendFile(path.join(__dirname, 'Public/AdicionarLista', 'adicionar_lista.html'));
-    }
-});
-
 app.get('/customizar', (req, res) => {
     const user = req.session.user;
     if (!user) {
