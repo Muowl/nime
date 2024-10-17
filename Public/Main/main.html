@@ -10,7 +10,13 @@
 <body>
     <div class="d-flex gradient-bg">
         <div class="sidebar">
-            <button class="btn"id="adicionarbtn">Adicionar</button>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle"id="adicionarbtn"aria-expanded="false">Adicionar</button>
+                <ul class="dropdown-menu" aria-labelledby="adicionarbtn">
+                    <li><a class="dropdown-item"href="/pesquisar">Pesquisar</a></li>
+                    <li><a class="dropdown-item"href="/customizar">Customizar</a></li>
+                </ul>
+            </div>
             <button class="btn"id="listabtn">Ver Lista</button>
         </div>
         <div class="content">

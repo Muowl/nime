@@ -31,6 +31,10 @@ body {
     border-radius: 10px;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .profile-section {
     width: 200px;
     padding: 20px;
