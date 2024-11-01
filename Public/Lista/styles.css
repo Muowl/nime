@@ -120,3 +120,9 @@ body {
     font-size: 15px;
     color: #4a0077;
 }
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #a864c7;
+    min-width: 142px;
+}
